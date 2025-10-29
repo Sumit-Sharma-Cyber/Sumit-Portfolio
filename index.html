@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sumit Sharma — Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Sumit Sharma</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <img src="sumit.jpg" alt="Sumit Sharma" class="profile-full" />
+      </div>
+
+      <div class="hero-right">
+        <h1 class="hero-name">Sumit Sharma</h1>
+        <p class="role">Aspiring Cybersecurity Professional</p>
+        <div class="typewriter" id="typewriter"></div>
+        <p class="bio">
+          Highly motivated and detail-oriented B.Com graduate with a strong foundation in cybersecurity. 
+          Seeking challenging opportunities to apply my technical skills in penetration testing, network security, and threat analysis.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="https://github.com/Sumit-Sharma-Cyber" target="_blank" rel="noopener">View GitHub</a>
+          <a class="btn outline" href="mailto:sljc.sumits11comm@gmail.com">Email Me</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="socials">
+          <a class="social-btn" href="https://www.linkedin.com/in/sumit-sharma-9a8833303" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" />
+          </a>
+          <a class="social-btn" href="https://www.instagram.com/sumit1006sh" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
+          </a>
+          <a class="social-btn" href="mailto:sljc.sumits11comm@gmail.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.png" alt="Gmail" />
+          </a>
+          <a class="social-btn" href="https://github.com/Sumit-Sharma-Cyber" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I completed my B.Com and trained in cybersecurity fundamentals. I have hands-on experience from internship projects and have worked with tools such as Linux, Wireshark, and basic penetration testing toolchains.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">Linux</div>
+        <div class="skill">Kali Linux</div>
+        <div class="skill">Wireshark</div>
+        <div class="skill">Metasploit</div>
+        <div class="skill">Burp Suite</div>
+        <div class="skill">Python</div>
+        <div class="skill">Networking</div>
+        <div class="skill">Cloud Awareness</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Cybersecurity Internship Projects</h3>
+          <p>Collection of internship tasks and labs including CTF writeups and tools. Explore the live showcase and related GitHub repository.</p>
+          <a class="link" href="https://sumit-sharma-cyber.github.io/Cybersecurity-Internship-Projects/" target="_blank">View Live</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Password Analyzer</h3>
+          <p>A web-based tool to evaluate password strength and suggest improvements. Built with HTML, CSS, and JavaScript.</p>
+          <a class="link" href="https://sumit-sharma-cyber.github.io/Password_Analyser/" target="_blank">View Live</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Deloitte Cyber Job Simulation — Forage</li>
+        <li>TATA Cybersecurity Analyst Job Simulation — Forage</li>
+        <li>Computer Hardware and Software — V.K. Krishna Menon College</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        Have an opportunity, collaboration, or just want to say hello?<br>
+        Drop me a message — I’ll get back to you soon.
+      </p>
+
+      <div class="contact-card">
+        <form id="contact-form" action="mailto:sljc.sumits11comm@gmail.com" method="post" enctype="text/plain" class="contact-form">
+          <label><span><i class="fa fa-user"></i> Name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+
+          <label><span><i class="fa fa-envelope"></i> Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label><span><i class="fa fa-comment-dots"></i> Message</span>
+            <textarea name="message" rows="5" placeholder="Hi Sumit, I wanted to..." required></textarea>
+          </label>
+
+          <div class="form-row">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="reset" class="btn outline">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> Sumit Sharma • Built with HTML, CSS & JS</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
